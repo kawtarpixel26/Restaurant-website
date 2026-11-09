@@ -9,9 +9,10 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Grilli - Amazing & Delicious Food</title>
-  <meta name="title" content="Grilli - Amazing & Delicious Food">
-  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+  <title>Blacksmith Agadir | Restaurant, Smokehouse &amp; Grill Lounge</title>
+  <meta name="title" content="Blacksmith Agadir | Restaurant, Smokehouse &amp; Grill Lounge">
+  <meta name="description" content="Blacksmith Agadir Restaurant - Rated 4.7★ (3,943 reviews). Charcoal grills, legendary meat skewers with chips, Flamin' Chicken Burger, crispy briouates, and craft mocktails. 2 Rue des Orangers, Agadir. Open daily till 1 AM.">
+  <meta name="keywords" content="Blacksmith Agadir, Restaurant Agadir, Grill Agadir, Smokehouse Agadir, Burger Agadir, Rue des Orangers Agadir, Moroccan Restaurant">
 
   <!-- 
     - favicon
@@ -23,7 +24,7 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Forum&display=swap" rel="stylesheet">
 
   <!-- 
     - custom css link
@@ -47,7 +48,7 @@
 
   <div class="preload" data-preaload>
     <div class="circle"></div>
-    <p class="text">Grilli</p>
+    <p class="text">Blacksmith Agadir</p>
   </div>
 
 
@@ -66,9 +67,9 @@
           <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">
-          Restaurant St, Delicious City, London 9578, UK
-        </span>
+        <a href="https://maps.google.com/?q=2+Rue+des+Orangers,+Agadir+80000" target="_blank" rel="noopener noreferrer" class="span hover-underline">
+          2 Rue des Orangers, Agadir 80000 (C9FX+37)
+        </a>
       </address>
 
       <div class="separator"></div>
@@ -78,25 +79,35 @@
           <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">Daily : 8.00 am to 10.00 pm</span>
+        <span class="span">Open Daily : 12:00 PM – 01:00 AM</span>
       </div>
 
-      <a href="tel:+11234567890" class="topbar-item link">
+      <div class="topbar-item">
+        <a href="#reviews" class="google-rating-pill">
+          <span class="stars">★★★★★</span>
+          <span>4.7 (3,943)</span>
+          <span style="opacity: 0.75; font-size: 1.1rem;">· MAD 100–200</span>
+        </a>
+      </div>
+
+      <div class="separator"></div>
+
+      <a href="tel:+212699779600" class="topbar-item link">
         <div class="icon">
           <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">+1 123 456 7890</span>
+        <span class="span">06 99 77 96 00</span>
       </a>
 
       <div class="separator"></div>
 
-      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+      <a href="mailto:contact@blacksmithagadir.com" class="topbar-item link">
         <div class="icon">
           <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">booking@restaurant.com</span>
+        <span class="span">contact@blacksmithagadir.com</span>
       </a>
 
     </div>
@@ -113,8 +124,8 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+      <a href="#top" class="logo" aria-label="Blacksmith Agadir Home">
+        <img src="./assets/images/logo.svg" width="220" height="50" alt="Blacksmith Agadir - Restaurant &amp; Grill">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -123,81 +134,110 @@
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        <a href="#top" class="logo" aria-label="Blacksmith Agadir Home">
+          <img src="./assets/images/logo.svg" width="220" height="50" alt="Blacksmith Agadir">
         </a>
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#home" class="navbar-link hover-underline active">
+            <a href="#home" class="navbar-link hover-underline active" data-nav-link>
               <div class="separator"></div>
-
               <span class="span">Home</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="#menu" class="navbar-link hover-underline">
+            <a href="#about" class="navbar-link hover-underline" data-nav-link>
               <div class="separator"></div>
-
-              <span class="span">Menus</span>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
               <span class="span">About Us</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="#services" class="navbar-link hover-underline" data-nav-link>
               <div class="separator"></div>
-
-              <span class="span">Our Chefs</span>
+              <span class="span">Services</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="#menu" class="navbar-link hover-underline" data-nav-link>
               <div class="separator"></div>
+              <span class="span">Menus &amp; Highlights</span>
+            </a>
+          </li>
 
-              <span class="span">Contact</span>
+          <li class="navbar-item">
+            <a href="#special-dish" class="navbar-link hover-underline" data-nav-link>
+              <div class="separator"></div>
+              <span class="span">Special Dish</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#reviews" class="navbar-link hover-underline" data-nav-link>
+              <div class="separator"></div>
+              <span class="span">Reviews</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#gallery" class="navbar-link hover-underline" data-nav-link>
+              <div class="separator"></div>
+              <span class="span">Photos &amp; Vibe</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline" data-nav-link>
+              <div class="separator"></div>
+              <span class="span">Location &amp; Contact</span>
             </a>
           </li>
 
         </ul>
 
         <div class="text-center">
-          <p class="headline-1 navbar-title">Visit Us</p>
+          <p class="headline-1 navbar-title">Visit Blacksmith</p>
 
           <address class="body-4">
-            Restaurant St, Delicious City, <br>
-            London 9578, UK
+            2 Rue des Orangers, <br>
+            Agadir 80000, Morocco (C9FX+37)
           </address>
 
-          <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+          <p class="body-4 navbar-text">Open Daily: 12:00 PM – 1:00 AM</p>
 
-          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
+          <div style="margin-block: 15px;">
+            <span class="google-rating-pill">
+              <span class="stars">★★★★★</span>
+              <span>4.7 (3,943 Reviews)</span>
+            </span>
+          </div>
+
+          <a href="mailto:contact@blacksmithagadir.com" class="body-4 sidebar-link">contact@blacksmithagadir.com</a>
 
           <div class="separator"></div>
 
-          <p class="contact-label">Booking Request</p>
+          <p class="contact-label">Reservations &amp; Orders</p>
 
-          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
-            +88-123-123456
+          <a href="tel:+212699779600" class="body-1 contact-number hover-underline">
+            06 99 77 96 00
           </a>
+
+          <div style="margin-block-start: 15px;">
+            <a href="https://maps.google.com/?q=2+Rue+des+Orangers,+Agadir+80000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-inline: auto;">
+              <span class="text text-1">Get Directions</span>
+              <span class="text text-2" aria-hidden="true">Google Maps</span>
+            </a>
+          </div>
         </div>
 
       </nav>
 
-      <a href="#" class="btn btn-secondary">
+      <a href="#reservation" class="btn btn-secondary">
         <span class="text text-1">Find A Table</span>
-
-        <span class="text text-2" aria-hidden="true">Find A Table</span>
+        <span class="text text-2" aria-hidden="true">Book A Table</span>
       </a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -226,78 +266,117 @@
 
         <ul class="hero-slider" data-hero-slider>
 
+          <!-- SLIDE 1 -->
           <li class="slider-item active" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="Blacksmith Charcoal Grill" class="img-cover">
             </div>
 
-            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+            <div class="hero-rating-badge slider-reveal">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.7 / 5.0 (3,943 Google Reviews)</span>
+              <span class="price-tag">MAD 100–200</span>
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Flame-Forged Culinary Excellence</p>
 
             <h1 class="display-1 hero-title slider-reveal">
-              For the love of <br>
-              delicious food
+              The Art of Smoke, <br>
+              Grill &amp; Gathering
             </h1>
 
             <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
+              Agadir’s premier charcoal smokehouse and grill lounge on Rue des Orangers. Savor sizzling meat skewers, gourmet burgers, and rich Moroccan gastronomy.
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;" class="slider-reveal">
+              <a href="#menu" class="btn btn-primary">
+                <span class="text text-1">Explore Menu</span>
+                <span class="text text-2" aria-hidden="true">Explore Menu</span>
+              </a>
 
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
+              <a href="#reservation" class="btn btn-secondary">
+                <span class="text text-1">Book A Table</span>
+                <span class="text text-2" aria-hidden="true">Reserve Online</span>
+              </a>
+            </div>
 
           </li>
 
+          <!-- SLIDE 2 -->
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="Blacksmith Skewers and Burgers" class="img-cover">
             </div>
 
-            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+            <div class="hero-rating-badge slider-reveal">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">Popular Picks &amp; Signatures</span>
+              <span class="price-tag">Agadir 80000</span>
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Signature Smokehouse Favorites</p>
 
             <h1 class="display-1 hero-title slider-reveal">
-              Flavors Inspired by <br>
-              the Seasons
+              Grilled Meat Skewers <br>
+              &amp; Flamin' Burger
             </h1>
 
             <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
+              Tender fire-kissed skewers with rustic chips and the famous Flamin' Chicken Burger. Available for Dine-in, Kerbside pickup, and No-contact delivery.
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;" class="slider-reveal">
+              <a href="#special-dish" class="btn btn-primary">
+                <span class="text text-1">View Highlights</span>
+                <span class="text text-2" aria-hidden="true">View Highlights</span>
+              </a>
 
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
+              <a href="tel:+212699779600" class="btn btn-secondary">
+                <span class="text text-1">Call 06 99 77 96 00</span>
+                <span class="text text-2" aria-hidden="true">Order Pickup</span>
+              </a>
+            </div>
 
           </li>
 
+          <!-- SLIDE 3 -->
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="Blacksmith Night Vibe" class="img-cover">
             </div>
 
-            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+            <div class="hero-rating-badge slider-reveal">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">Night Lounge &amp; Dining</span>
+              <span class="price-tag">Open till 1 AM</span>
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Vibrant Evenings &amp; Late Night Bites</p>
 
             <h1 class="display-1 hero-title slider-reveal">
-              Where every flavor <br>
-              tells a story
+              Where Every Flavor <br>
+              Sparks A Story
             </h1>
 
             <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
+              From golden briouates and coastal seafood paella to artisan mojitos. Experience warm Moroccan hospitality under the Agadir night sky.
             </p>
 
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;" class="slider-reveal">
+              <a href="#reservation" class="btn btn-primary">
+                <span class="text text-1">Reserve Your Night</span>
+                <span class="text text-2" aria-hidden="true">Reserve Your Night</span>
+              </a>
 
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
+              <a href="https://maps.google.com/?q=2+Rue+des+Orangers,+Agadir+80000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span class="text text-1">Find Us (C9FX+37)</span>
+                <span class="text text-2" aria-hidden="true">Google Directions</span>
+              </a>
+            </div>
 
           </li>
 
@@ -311,9 +390,8 @@
           <ion-icon name="chevron-forward"></ion-icon>
         </button>
 
-        <a href="#" class="hero-btn has-after">
+        <a href="#reservation" class="hero-btn has-after">
           <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
-
           <span class="label-2 text-center span">Book A Table</span>
         </a>
 
@@ -324,86 +402,109 @@
 
 
       <!-- 
-        - #SERVICE
+        - #SERVICES / DINING OPTIONS
       -->
 
-      <section class="section service bg-black-10 text-center" aria-label="service">
+      <section class="section service bg-black-10 text-center" aria-label="services" id="services">
         <div class="container">
 
-          <p class="section-subtitle label-2">Flavors For Royalty</p>
+          <p class="section-subtitle label-2">Dining Modes &amp; Hospitality</p>
 
-          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+          <h2 class="headline-1 section-title">Crafted For Every Dining Style</h2>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
-            standard dummy text ever.
+            Whether you choose to unwind in our atmospheric lounge, pick up sizzling skewers curbside, or enjoy contactless delivery to your home in Agadir — Blacksmith delivers an exceptional culinary experience.
           </p>
+
+          <div class="service-options">
+            <span class="service-pill">
+              <ion-icon name="restaurant-outline"></ion-icon> Dine-in Experience
+            </span>
+            <span class="service-pill">
+              <ion-icon name="car-outline"></ion-icon> Kerbside Pickup
+            </span>
+            <span class="service-pill">
+              <ion-icon name="bag-check-outline"></ion-icon> No-Contact Delivery
+            </span>
+          </div>
 
           <ul class="grid-list">
 
+            <!-- Card 1: Dine-in -->
             <li>
               <div class="service-card">
 
-                <a href="#" class="has-before hover:shine">
+                <a href="#reservation" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
-                      class="img-cover">
+                    <img src="./assets/images/lounge-vibe.jpg" width="285" height="336" loading="lazy" alt="Dine-in Lounge &amp; Terrace" class="img-cover">
                   </figure>
                 </a>
 
                 <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="#">Breakfast</a>
+                    <a href="#reservation">Dine-In Lounge</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <p class="label-1 card-text" style="margin-block: 8px 14px; color: var(--quick-silver);">
+                    Immerse in our industrial forge decor, ambient soundtrack, and warm Moroccan welcome. Open daily until 1 AM.
+                  </p>
+
+                  <a href="#reservation" class="btn-text hover-underline label-2">Book Your Table</a>
 
                 </div>
 
               </div>
             </li>
 
+            <!-- Card 2: Kerbside Pickup -->
             <li>
               <div class="service-card">
 
-                <a href="#" class="has-before hover:shine">
+                <a href="tel:+212699779600" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
-                      class="img-cover">
+                    <img src="./assets/images/flamin-burger.jpg" width="285" height="336" loading="lazy" alt="Kerbside Pickup" class="img-cover">
                   </figure>
                 </a>
 
                 <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="#">Appetizers</a>
+                    <a href="tel:+212699779600">Kerbside Pickup</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <p class="label-1 card-text" style="margin-block: 8px 14px; color: var(--quick-silver);">
+                    Order ahead by phone. We bring your freshly grilled skewers and juicy burgers hot to your car at Rue des Orangers.
+                  </p>
+
+                  <a href="tel:+212699779600" class="btn-text hover-underline label-2">Call 06 99 77 96 00</a>
 
                 </div>
 
               </div>
             </li>
 
+            <!-- Card 3: No-contact delivery -->
             <li>
               <div class="service-card">
 
-                <a href="#" class="has-before hover:shine">
+                <a href="#menu" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
-                      class="img-cover">
+                    <img src="./assets/images/skewers.jpg" width="285" height="336" loading="lazy" alt="No-Contact Delivery" class="img-cover">
                   </figure>
                 </a>
 
                 <div class="card-content">
 
                   <h3 class="title-4 card-title">
-                    <a href="#">Drinks</a>
+                    <a href="#menu">No-Contact Delivery</a>
                   </h3>
 
-                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+                  <p class="label-1 card-text" style="margin-block: 8px 14px; color: var(--quick-silver);">
+                    Enjoy restaurant-quality meals at home. Carefully packed and delivered hot and contact-free across Agadir.
+                  </p>
+
+                  <a href="#menu" class="btn-text hover-underline label-2">View Delivery Menu</a>
 
                 </div>
 
@@ -412,10 +513,8 @@
 
           </ul>
 
-          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
-            class="shape shape-1 move-anim">
-          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
-            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape" class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-2 move-anim">
 
         </div>
       </section>
@@ -433,40 +532,46 @@
 
           <div class="about-content">
 
-            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+            <p class="label-2 section-subtitle" id="about-label">Our Heritage &amp; Craft</p>
 
-            <h2 class="headline-1 section-title">Every Fla vor Tells a Story</h2>
+            <h2 class="headline-1 section-title">Forged By Flame, Rooted In Agadir</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book It has survived not only five centuries, but also the leap into.
+              Located at <strong>2 Rue des Orangers</strong> in the vibrant heart of Agadir, <strong>Blacksmith</strong> was created to celebrate the raw power of charcoal grilling and the warmth of Moroccan dining. We fuse premium butcher cuts and artisanal smokehouse recipes with regional Atlantic delicacies and traditional spices.
             </p>
 
-            <div class="contact-label">Book Through Call</div>
+            <p class="section-text" style="margin-block-start: 12px;">
+              With over <strong>3,940 verified reviews</strong> and an outstanding <strong>4.7-star rating</strong>, our kitchen is renowned for generous portions, friendly late-night service (open daily until 1:00 AM), and great value ranging from <strong>MAD 100 to 200 per guest</strong>.
+            </p>
 
-            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+            <div class="contact-label">Direct Reservations &amp; Enquiries</div>
 
-            <a href="#" class="btn btn-primary">
-              <span class="text text-1">Read More</span>
+            <a href="tel:+212699779600" class="body-1 contact-number hover-underline">06 99 77 96 00</a>
 
-              <span class="text text-2" aria-hidden="true">Read More</span>
-            </a>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-block-start: 25px;">
+              <a href="#menu" class="btn btn-primary">
+                <span class="text text-1">Discover Menu</span>
+                <span class="text text-2" aria-hidden="true">Discover Menu</span>
+              </a>
+
+              <a href="https://maps.google.com/?q=2+Rue+des+Orangers,+Agadir+80000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span class="text text-1">Get Directions</span>
+                <span class="text text-2" aria-hidden="true">Google Maps</span>
+              </a>
+            </div>
 
           </div>
 
           <figure class="about-banner">
 
-            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
-              class="w-100" data-parallax-item data-parallax-speed="1">
+            <img src="./assets/images/about-blacksmith.jpg" width="570" height="570" loading="lazy" alt="Blacksmith Charcoal Grill Experience" class="w-100" data-parallax-item data-parallax-speed="1">
 
             <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
-              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
-                class="w-100">
+              <img src="./assets/images/about-abs-blacksmith.jpg" width="285" height="285" loading="lazy" alt="Open flame grill craftsmanship" class="w-100">
             </div>
 
             <div class="abs-img abs-img-2 has-before">
-              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+              <img src="./assets/images/badge-blacksmith.svg" width="133" height="134" loading="lazy" alt="Blacksmith Agadir Badge">
             </div>
 
           </figure>
@@ -484,11 +589,10 @@
         - #SPECIAL DISH
       -->
 
-      <section class="special-dish text-center" aria-labelledby="dish-label">
+      <section class="special-dish text-center" aria-labelledby="dish-label" id="special-dish">
 
         <div class="special-dish-banner">
-          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
-            class="img-cover">
+          <img src="./assets/images/special-dish-blacksmith.jpg" width="940" height="900" loading="lazy" alt="The Blacksmith Flamin Chicken Burger" class="img-cover">
         </div>
 
         <div class="special-dish-content bg-black-10">
@@ -496,32 +600,35 @@
 
             <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
 
-            <p class="section-subtitle label-2">Special Dish</p>
+            <p class="section-subtitle label-2">Popular Customer Favorite</p>
 
-            <h2 class="headline-1 section-title">Lobster Tortellini</h2>
+            <h2 class="headline-1 section-title">The Blacksmith Flamin' Chicken Burger</h2>
 
             <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type.
+              Double crispy buttermilk chicken fillet dipped in our secret house-forged spicy blacksmith glaze, melted smoked aged cheddar, pickled jalapeños, caramelized sweet onions, and crisp greens inside a toasted artisanal brioche bun. Served with a generous portion of golden rustic chips.
             </p>
 
             <div class="wrapper">
-              <del class="del body-3">$40.00</del>
-
-              <span class="span body-1">$20.00</span>
+              <del class="del body-3">135 MAD</del>
+              <span class="span body-1">110 MAD</span>
             </div>
 
-            <a href="#" class="btn btn-primary">
-              <span class="text text-1">View All Menu</span>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+              <a href="#reservation" class="btn btn-primary">
+                <span class="text text-1">Book A Table &amp; Taste It</span>
+                <span class="text text-2" aria-hidden="true">Reserve Now</span>
+              </a>
 
-              <span class="text text-2" aria-hidden="true">View All Menu</span>
-            </a>
+              <a href="tel:+212699779600" class="btn btn-secondary">
+                <span class="text text-1">Order by Phone</span>
+                <span class="text text-2" aria-hidden="true">06 99 77 96 00</span>
+              </a>
+            </div>
 
           </div>
         </div>
 
         <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
-
         <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
 
       </section>
@@ -537,173 +644,334 @@
       <section class="section menu" aria-label="menu-label" id="menu">
         <div class="container">
 
-          <p class="section-subtitle text-center label-2">Special Selection</p>
+          <p class="section-subtitle text-center label-2">Handcrafted Smoke &amp; Spices</p>
 
-          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+          <h2 class="headline-1 section-title text-center">Blacksmith Agadir Menu</h2>
+
+          <p class="section-text text-center" style="max-width: 600px; margin-inline: auto; margin-block-end: 35px;">
+            Authentic charcoal-grilled skewers, gourmet smokehouse burgers, traditional Moroccan briouates &amp; couscous, wood-fired pizzas, coastal seafood, and fresh artisan mojitos.
+          </p>
+
+          <!-- Category Filters -->
+          <div class="menu-filter-list">
+            <button class="filter-btn active" data-filter-btn="all">All Dishes</button>
+            <button class="filter-btn" data-filter-btn="grills">Grills &amp; Burgers</button>
+            <button class="filter-btn" data-filter-btn="starters">Briouates &amp; Tapas</button>
+            <button class="filter-btn" data-filter-btn="specialties">Moroccan &amp; Seafood</button>
+            <button class="filter-btn" data-filter-btn="drinks">Mojitos &amp; Sweets</button>
+          </div>
 
           <ul class="grid-list">
 
-            <li>
+            <!-- 1. Grilled Meat Skewers with Chips (POPULAR) -->
+            <li data-menu-category="grills">
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
-                    class="img-cover">
+                  <img src="./assets/images/skewers.jpg" width="100" height="100" loading="lazy" alt="Grilled Meat Skewers with Chips" class="img-cover">
                 </figure>
 
-                <div>
-
+                <div class="menu-card-body">
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Greek Salad</a>
+                      <a href="#reservation" class="card-title">Grilled Meat Skewers &amp; Chips</a>
                     </h3>
 
-                    <span class="badge label-1">Seasonal</span>
+                    <span class="badge popular label-1">Popular</span>
 
-                    <span class="span title-2">$25.50</span>
+                    <span class="span title-2">130 MAD</span>
                   </div>
 
                   <p class="card-text label-1">
-                    Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+                    Charcoal-grilled marinated tender beef &amp; lamb skewers, cumin-spiced glaze, grilled tomato, chimichurri dip, and golden rustic chips.
                   </p>
-
                 </div>
 
               </div>
             </li>
 
-            <li>
+            <!-- 2. The Blacksmith Flamin Chicken Burger (POPULAR) -->
+            <li data-menu-category="grills">
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne"
-                    class="img-cover">
+                  <img src="./assets/images/flamin-burger.jpg" width="100" height="100" loading="lazy" alt="The Blacksmith Flamin Chicken Burger" class="img-cover">
                 </figure>
 
-                <div>
-
+                <div class="menu-card-body">
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Lasagne</a>
+                      <a href="#reservation" class="card-title">The Blacksmith Flamin' Burger</a>
                     </h3>
 
-                    <span class="span title-2">$40.00</span>
+                    <span class="badge popular label-1">Popular</span>
+
+                    <span class="span title-2">110 MAD</span>
                   </div>
 
                   <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                    Crispy buttermilk fried chicken, fiery house relish, melted smoked cheddar, pickles, and crispy hand-cut chips.
                   </p>
-
                 </div>
 
               </div>
             </li>
 
-            <li>
+            <!-- 3. Crispy Moroccan Briouates (HIGHLIGHTED IN REVIEWS) -->
+            <li data-menu-category="starters">
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
-                    class="img-cover">
+                  <img src="./assets/images/briouates.jpg" width="100" height="100" loading="lazy" alt="Crispy Moroccan Briouates" class="img-cover">
                 </figure>
 
-                <div>
-
+                <div class="menu-card-body">
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Butternut Pumpkin</a>
+                      <a href="#reservation" class="card-title">Crispy Moroccan Briouates</a>
                     </h3>
 
-                    <span class="span title-2">$10.00</span>
+                    <span class="badge special label-1">Must-Try</span>
+
+                    <span class="span title-2">75 MAD</span>
                   </div>
 
                   <p class="card-text label-1">
-                    Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                    Delicate crispy phyllo parcels generously stuffed with seasoned minced beef, fresh coriander, roasted almonds, and melted cheese.
                   </p>
-
                 </div>
 
               </div>
             </li>
 
-            <li>
+            <!-- 4. Poulpe à la Gallega (HIGHLIGHTED IN REVIEWS) -->
+            <li data-menu-category="specialties">
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
-                    class="img-cover">
+                  <img src="./assets/images/octopus.jpg" width="100" height="100" loading="lazy" alt="Poulpe à la Gallega" class="img-cover">
                 </figure>
 
-                <div>
-
+                <div class="menu-card-body">
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Tokusen Wagyu</a>
+                      <a href="#reservation" class="card-title">Poulpe à la Gallega</a>
                     </h3>
 
-                    <span class="badge label-1">New</span>
+                    <span class="badge special label-1">Chef Pick</span>
 
-                    <span class="span title-2">$39.00</span>
+                    <span class="span title-2">150 MAD</span>
                   </div>
 
                   <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                    Tender braised Atlantic octopus, smoked paprika de la Vera, extra virgin olive oil, coarse sea salt flakes, on potato rounds.
                   </p>
-
                 </div>
 
               </div>
             </li>
 
-            <li>
+            <!-- 5. Seafood Paella Royale -->
+            <li data-menu-category="specialties">
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
-                    class="img-cover">
+                  <img src="./assets/images/paella.jpg" width="100" height="100" loading="lazy" alt="Seafood Paella Royale" class="img-cover">
                 </figure>
 
-                <div>
-
+                <div class="menu-card-body">
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Olivas Rellenas</a>
+                      <a href="#reservation" class="card-title">Seafood Paella Royale</a>
                     </h3>
 
-                    <span class="span title-2">$25.00</span>
+                    <span class="span title-2">165 MAD</span>
                   </div>
 
                   <p class="card-text label-1">
-                    Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                    Slow-cooked saffron Bomba rice with Atlantic king prawns, tender calamari, fresh mussels, red bell peppers, and garden peas.
                   </p>
-
                 </div>
 
               </div>
             </li>
 
-            <li>
+            <!-- 6. Royal Moroccan Couscous -->
+            <li data-menu-category="specialties">
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
-                    class="img-cover">
+                  <img src="./assets/images/couscous.jpg" width="100" height="100" loading="lazy" alt="Royal Moroccan Couscous" class="img-cover">
                 </figure>
 
-                <div>
-
+                <div class="menu-card-body">
                   <div class="title-wrapper">
                     <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
+                      <a href="#reservation" class="card-title">Royal Moroccan Couscous</a>
                     </h3>
 
-                    <span class="span title-2">$49.00</span>
+                    <span class="badge special label-1">Authentic</span>
+
+                    <span class="span title-2">140 MAD</span>
                   </div>
 
                   <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                    Fine hand-rolled semolina steamed over aromatic bouillon, slow-braised tender lamb shank, seven fresh vegetables, and sweet Tfaya onions.
                   </p>
+                </div>
 
+              </div>
+            </li>
+
+            <!-- 7. Wood-Fired Pizza -->
+            <li data-menu-category="grills">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/pizza.jpg" width="100" height="100" loading="lazy" alt="Wood-Fired Artisan Pizza" class="img-cover">
+                </figure>
+
+                <div class="menu-card-body">
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Wood-Fired Truffle Pizza</a>
+                    </h3>
+
+                    <span class="span title-2">120 MAD</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Crispy sourdough crust, black truffle cream base, fior di latte mozzarella, cured bresaola, fresh baby arugula, and parmesan shavings.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- 8. Spiced Samosas & Souvlaki Skewers -->
+            <li data-menu-category="starters">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/souvlaki.jpg" width="100" height="100" loading="lazy" alt="Souvlaki and Samosas" class="img-cover">
+                </figure>
+
+                <div class="menu-card-body">
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Samosas &amp; Souvlaki Duo</a>
+                    </h3>
+
+                    <span class="span title-2">85 MAD</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Crisp spiced beef samosas paired with grilled Mediterranean souvlaki skewers, fresh pita, and cool cucumber-herb tzatziki.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- 9. Charcoal-Glazed Chicken Wings -->
+            <li data-menu-category="starters">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/wings.jpg" width="100" height="100" loading="lazy" alt="Charcoal Chicken Wings" class="img-cover">
+                </figure>
+
+                <div class="menu-card-body">
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Smoky Honey BBQ Wings</a>
+                    </h3>
+
+                    <span class="badge popular label-1">Popular</span>
+
+                    <span class="span title-2">80 MAD</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Charcoal-crisped jumbo chicken wings tossed in our signature smoky wildflower honey glaze with creamy garlic herb dipping sauce.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- 10. Rustic Blacksmith French Fries -->
+            <li data-menu-category="starters">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/fries.jpg" width="100" height="100" loading="lazy" alt="Rustic Blacksmith French Fries" class="img-cover">
+                </figure>
+
+                <div class="menu-card-body">
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Rustic Blacksmith Fries</a>
+                    </h3>
+
+                    <span class="span title-2">40 MAD</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Double-fried skin-on local Agadir potatoes seasoned with rosemary sea salt, served with garlic truffle aioli and spicy blacksmith ketchup.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- 11. Signature Blacksmith Mojito -->
+            <li data-menu-category="drinks">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/mojito.jpg" width="100" height="100" loading="lazy" alt="Signature Blacksmith Mojito" class="img-cover">
+                </figure>
+
+                <div class="menu-card-body">
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Blacksmith Signature Mojito</a>
+                    </h3>
+
+                    <span class="badge special label-1">Top Rated</span>
+
+                    <span class="span title-2">55 MAD</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Crushed fresh spearmint, lime wedges, cane sugar, sparkling soda, and your choice of passion fruit, wild strawberry, or classic mint.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- 12. Moroccan Mint Tea & Sweet Briouates -->
+            <li data-menu-category="drinks">
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/briouates.jpg" width="100" height="100" loading="lazy" alt="Moroccan Mint Tea &amp; Pastry" class="img-cover">
+                </figure>
+
+                <div class="menu-card-body">
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Moroccan Tea &amp; Honey Briouates</a>
+                    </h3>
+
+                    <span class="span title-2">45 MAD</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Freshly brewed ceremonial mint tea served in traditional glass with golden almond and orange blossom honey briouate pastries.
+                  </p>
                 </div>
 
               </div>
@@ -712,19 +980,18 @@
           </ul>
 
           <p class="menu-text text-center">
-            During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+            Kitchen serving non-stop daily from <span class="span">12:00 PM</span> to <span class="span">01:00 AM</span> · Average <span class="span">MAD 100–200</span> per guest
           </p>
 
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View All Menu</span>
+          <div style="text-align: center; margin-block-start: 25px;">
+            <a href="#reservation" class="btn btn-primary" style="margin-inline: auto;">
+              <span class="text text-1">Book Your Experience</span>
+              <span class="text text-2" aria-hidden="true">Reserve Online</span>
+            </a>
+          </div>
 
-            <span class="text text-2" aria-hidden="true">View All Menu</span>
-          </a>
-
-          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
-            class="shape shape-2 move-anim">
-          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
-            class="shape shape-3 move-anim">
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim">
 
         </div>
       </section>
@@ -734,31 +1001,129 @@
 
 
       <!-- 
-        - #TESTIMONIALS
+        - #TESTIMONIALS & REVIEWS
       -->
 
-      <section class="section testi text-center has-bg-image"
-        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+      <section class="section testi text-center has-bg-image" style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials" id="reviews">
         <div class="container">
 
-          <div class="quote">”</div>
+          <p class="section-subtitle label-2">Google Maps Social Proof</p>
 
-          <p class="headline-2 testi-text">
-            I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
-            extraordinary.
-          </p>
+          <h2 class="headline-1 section-title">What Our Guests Say</h2>
 
-          <div class="wrapper">
-            <div class="separator"></div>
-            <div class="separator"></div>
-            <div class="separator"></div>
+          <!-- Google Review Score Box -->
+          <div class="google-review-summary">
+            <div class="review-score-wrap">
+              <div class="review-big-score">4.7</div>
+              <div class="review-stars-col">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-count-text">Based on <strong>3,943 verified reviews</strong> on Google</div>
+              </div>
+            </div>
+
+            <div class="review-meta-pills">
+              <span class="review-meta-pill highlight">MAD 100–200 per person</span>
+              <span class="review-meta-pill">Reported by 617+ guests</span>
+              <span class="review-meta-pill">Open daily till 1 AM</span>
+              <span class="review-meta-pill">Dine-in · Kerbside · Delivery</span>
+            </div>
           </div>
 
-          <div class="profile">
-            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
-              class="img">
+          <!-- Real Customer Reviews Grid -->
+          <div class="reviews-cards-grid">
 
-            <p class="label-2 profile-name">Sam Jhonson</p>
+            <div class="guest-review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">
+                « Les briouates sont délicieuses, croustillantes et généreuses ! Les brochettes de viande au feu de bois et le Flamin' Chicken Burger sont devenus nos incontournables à Agadir. Service attentif et ambiance très conviviale jusqu'à 1h du matin ! »
+              </p>
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">Y</div>
+                <div>
+                  <div class="reviewer-name">Yassine E.</div>
+                  <div class="reviewer-meta">Local Guide (48 avis) · Agadir</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="guest-review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">
+                « Fantastic smokehouse and grill in Agadir! The grilled meat skewers with chips are to die for. Generous portions, fair prices (MAD 100–200 range), and super friendly staff. The fresh mojito was the perfect touch. 10/10! »
+              </p>
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">S</div>
+                <div>
+                  <div class="reviewer-name">Sarah &amp; David M.</div>
+                  <div class="reviewer-meta">Verified Diner · United Kingdom</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="guest-review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">
+                « Superbe terrasse sur la Rue des Orangers. La paella et les wings fumés sont excellents. Très pratique d’avoir l’option à emporter ou livraison rapide. Une vraie adresse de référence à Agadir ! »
+              </p>
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">M</div>
+                <div>
+                  <div class="reviewer-name">Mehdi Bennani</div>
+                  <div class="reviewer-meta">Visiteur régulier · Agadir</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Popular Times Live Widget (From Client Info) -->
+          <div class="popular-times-widget">
+            <div class="popular-times-header">
+              <div>
+                <strong style="color: var(--white); font-size: 1.5rem;">Popular Times · Sundays &amp; Evenings</strong>
+                <div style="color: var(--quick-silver); font-size: 1.2rem;">Live data from Google Maps</div>
+              </div>
+
+              <div class="live-status">
+                <span class="live-pulse-dot"></span>
+                <span>Live · A Little Busy</span>
+              </div>
+            </div>
+
+            <div class="popular-bars">
+              <div class="bar-col">
+                <div class="bar" style="height: 15%;"></div>
+                <span class="hour">6a</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar" style="height: 30%;"></div>
+                <span class="hour">9a</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar" style="height: 70%;"></div>
+                <span class="hour">12p</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar" style="height: 55%;"></div>
+                <span class="hour">3p</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar" style="height: 80%;"></div>
+                <span class="hour">6p</span>
+              </div>
+              <div class="bar-col active">
+                <div class="bar" style="height: 100%;"></div>
+                <span class="hour">9p</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar" style="height: 65%;"></div>
+                <span class="hour">12a</span>
+              </div>
+            </div>
+
+            <p class="popular-times-note">
+              Peak hours: 12:30 PM – 3:00 PM (Lunch) &amp; 7:30 PM – 11:30 PM (Dinner &amp; Lounge). Table reservation is recommended.
+            </p>
           </div>
 
         </div>
@@ -769,27 +1134,140 @@
 
 
       <!-- 
-        - #RESERVATION
+        - #PHOTO & VIBE GALLERY
       -->
 
-      <section class="reservation">
+      <section class="gallery-section text-center" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Visual Atmosphere</p>
+
+          <h2 class="headline-1 section-title">Photos, Flavors &amp; Vibe</h2>
+
+          <p class="section-text" style="max-width: 600px; margin-inline: auto;">
+            Explore the culinary craftsmanship and relaxed evening energy at Blacksmith Agadir.
+          </p>
+
+          <div class="gallery-grid">
+
+            <div class="gallery-item">
+              <img src="./assets/images/skewers.jpg" loading="lazy" alt="Grilled Meat Skewers">
+              <div class="gallery-overlay">
+                <div>
+                  <span class="gallery-tag">Food &amp; Drink</span>
+                  <h4 class="gallery-title">Grilled Skewers &amp; Chips</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/images/flamin-burger.jpg" loading="lazy" alt="Flamin Chicken Burger">
+              <div class="gallery-overlay">
+                <div>
+                  <span class="gallery-tag">Signature</span>
+                  <h4 class="gallery-title">The Flamin' Chicken Burger</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/images/lounge-vibe.jpg" loading="lazy" alt="Blacksmith Lounge Vibe">
+              <div class="gallery-overlay">
+                <div>
+                  <span class="gallery-tag">Vibe &amp; Ambiance</span>
+                  <h4 class="gallery-title">Cozy Lounge &amp; Music</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/images/mojito.jpg" loading="lazy" alt="Artisan Mojito">
+              <div class="gallery-overlay">
+                <div>
+                  <span class="gallery-tag">Mixology</span>
+                  <h4 class="gallery-title">Fresh Passion Fruit Mojito</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/images/briouates.jpg" loading="lazy" alt="Crispy Moroccan Briouates">
+              <div class="gallery-overlay">
+                <div>
+                  <span class="gallery-tag">Traditional</span>
+                  <h4 class="gallery-title">Crispy Briouates</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/images/octopus.jpg" loading="lazy" alt="Poulpe à la Gallega">
+              <div class="gallery-overlay">
+                <div>
+                  <span class="gallery-tag">Atlantic Seafood</span>
+                  <h4 class="gallery-title">Poulpe à la Gallega</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/images/pizza.jpg" loading="lazy" alt="Wood-fired Pizza">
+              <div class="gallery-overlay">
+                <div>
+                  <span class="gallery-tag">Wood-Fired</span>
+                  <h4 class="gallery-title">Truffle &amp; Bresaola Pizza</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/images/terrace-night.jpg" loading="lazy" alt="Outdoor Terrace at Night">
+              <div class="gallery-overlay">
+                <div>
+                  <span class="gallery-tag">Nightlife</span>
+                  <h4 class="gallery-title">Late Night Terrace till 1 AM</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-block-start: 30px;">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="google-rating-pill" style="margin-inline: auto;">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <span>Follow @blacksmith on Instagram for Daily Stories</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION & CONTACT
+      -->
+
+      <section class="reservation" id="reservation">
         <div class="container">
 
           <div class="form reservation-form bg-black-10">
 
-            <form action="" class="form-left">
+            <form action="" class="form-left" data-reservation-form>
 
               <h2 class="headline-1 text-center">Online Reservation</h2>
 
               <p class="form-text text-center">
-                Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
-                or fill out the order form
+                Instant booking request: call <a href="tel:+212699779600" class="link">06 99 77 96 00</a>
+                or reserve your table below
               </p>
 
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+                <input type="text" name="name" placeholder="Your Name" required autocomplete="name" class="input-field">
 
-                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+                <input type="tel" name="phone" placeholder="Phone Number (e.g. 06 XX XX XX XX)" required autocomplete="tel" class="input-field">
               </div>
 
               <div class="input-wrapper">
@@ -797,14 +1275,14 @@
                 <div class="icon-wrapper">
                   <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                  <select name="person" class="input-field">
-                    <option value="1-person">1 Person</option>
-                    <option value="2-person">2 Person</option>
-                    <option value="3-person">3 Person</option>
-                    <option value="4-person">4 Person</option>
-                    <option value="5-person">5 Person</option>
-                    <option value="6-person">6 Person</option>
-                    <option value="7-person">7 Person</option>
+                  <select name="person" class="input-field" aria-label="Number of guests">
+                    <option value="1 Person">1 Person</option>
+                    <option value="2 Persons" selected>2 Persons</option>
+                    <option value="3 Persons">3 Persons</option>
+                    <option value="4 Persons">4 Persons</option>
+                    <option value="5 Persons">5 Persons</option>
+                    <option value="6 Persons">6 Persons</option>
+                    <option value="7+ Persons">7+ Persons (Group Table)</option>
                   </select>
 
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
@@ -813,7 +1291,7 @@
                 <div class="icon-wrapper">
                   <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
 
-                  <input type="date" name="reservation-date" class="input-field">
+                  <input type="date" name="reservation-date" required class="input-field" aria-label="Reservation date">
 
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
@@ -821,22 +1299,16 @@
                 <div class="icon-wrapper">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                  <select name="person" class="input-field">
-                    <option value="08:00am">08 : 00 am</option>
-                    <option value="09:00am">09 : 00 am</option>
-                    <option value="010:00am">10 : 00 am</option>
-                    <option value="011:00am">11 : 00 am</option>
-                    <option value="012:00am">12 : 00 am</option>
-                    <option value="01:00pm">01 : 00 pm</option>
-                    <option value="02:00pm">02 : 00 pm</option>
-                    <option value="03:00pm">03 : 00 pm</option>
-                    <option value="04:00pm">04 : 00 pm</option>
-                    <option value="05:00pm">05 : 00 pm</option>
-                    <option value="06:00pm">06 : 00 pm</option>
-                    <option value="07:00pm">07 : 00 pm</option>
-                    <option value="08:00pm">08 : 00 pm</option>
-                    <option value="09:00pm">09 : 00 pm</option>
-                    <option value="10:00pm">10 : 00 pm</option>
+                  <select name="time" class="input-field" aria-label="Reservation time">
+                    <option value="12:30 pm">12 : 30 pm (Lunch)</option>
+                    <option value="01:30 pm">01 : 30 pm</option>
+                    <option value="02:30 pm">02 : 30 pm</option>
+                    <option value="07:00 pm">07 : 00 pm (Dinner)</option>
+                    <option value="08:00 pm" selected>08 : 00 pm</option>
+                    <option value="09:00 pm">09 : 00 pm</option>
+                    <option value="10:00 pm">10 : 00 pm</option>
+                    <option value="11:00 pm">11 : 00 pm (Late Night)</option>
+                    <option value="12:00 am">12 : 00 am</option>
                   </select>
 
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
@@ -844,49 +1316,101 @@
 
               </div>
 
-              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+              <!-- Dining Option Selection -->
+              <div class="input-wrapper">
+                <div class="icon-wrapper" style="width: 100%;">
+                  <ion-icon name="restaurant-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="service_type" class="input-field" aria-label="Dining Option">
+                    <option value="Dine-in (Indoor Lounge)" selected>Dine-In · Indoor Smokehouse Lounge</option>
+                    <option value="Dine-in (Outdoor Terrace)">Dine-In · Outdoor Terrace</option>
+                    <option value="Kerbside Pickup">Kerbside Pickup (Pre-order)</option>
+                    <option value="No-contact Delivery">No-Contact Delivery to Address</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+              </div>
+
+              <textarea name="message" placeholder="Special requests, dietary preferences, or birthday celebrations..." autocomplete="off" class="input-field"></textarea>
 
               <button type="submit" class="btn btn-secondary">
                 <span class="text text-1">Book A Table</span>
-
-                <span class="text text-2" aria-hidden="true">Book A Table</span>
+                <span class="text text-2" aria-hidden="true">Confirm Reservation</span>
               </button>
 
             </form>
 
-            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')" id="contact">
 
-              <h2 class="headline-1 text-center">Contact Us</h2>
+              <h2 class="headline-1 text-center">Contact Blacksmith</h2>
 
-              <p class="contact-label">Booking Request</p>
+              <p class="contact-label">Telephone Reservations</p>
 
-              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
+              <a href="tel:+212699779600" class="body-1 contact-number hover-underline">06 99 77 96 00</a>
 
               <div class="separator"></div>
 
-              <p class="contact-label">Location</p>
+              <p class="contact-label">Location in Agadir</p>
 
               <address class="body-4">
-                Restaurant St, Delicious City, <br>
-                London 9578, UK
+                2 Rue des Orangers, <br>
+                Agadir 80000, Morocco <br>
+                <span style="color: var(--gold-crayola); font-size: 1.3rem;">Plus Code: C9FX+37 Agadir</span>
               </address>
 
-              <p class="contact-label">Lunch Time</p>
+              <p class="contact-label">Opening Hours</p>
 
               <p class="body-4">
                 Monday to Sunday <br>
-                11.00 am - 2.30pm
+                <strong>12:00 PM – 01:00 AM</strong> <br>
+                <span style="color: var(--gold-crayola); font-size: 1.3rem;">(Kitchen closes at 1 AM)</span>
               </p>
 
-              <p class="contact-label">Dinner Time</p>
+              <p class="contact-label">Pricing</p>
 
               <p class="body-4">
-                Monday to Sunday <br>
-                05.00 pm - 10.00pm
+                MAD 100–200 per guest <br>
+                <span style="font-size: 1.2rem; color: var(--quick-silver);">(Reported by 617+ visitors)</span>
               </p>
+
+              <div style="margin-block-start: 15px;">
+                <a href="https://maps.google.com/?q=2+Rue+des+Orangers,+Agadir+80000" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-inline: auto;">
+                  <span class="text text-1">Get Directions</span>
+                  <span class="text text-2" aria-hidden="true">Google Maps</span>
+                </a>
+              </div>
 
             </div>
 
+          </div>
+
+          <!-- Google Maps Embed Card -->
+          <div class="map-card-wrapper">
+            <div class="map-card-header">
+              <div class="map-card-title">
+                <ion-icon name="map-outline"></ion-icon>
+                <span>Find Us on Rue des Orangers · Agadir</span>
+              </div>
+
+              <div class="map-card-address">
+                Plus Code: <strong>C9FX+37 Agadir</strong> · 2 Rue des Orangers 80000
+              </div>
+
+              <a href="https://maps.google.com/?q=2+Rue+des+Orangers,+Agadir+80000" target="_blank" rel="noopener noreferrer" class="google-rating-pill">
+                <ion-icon name="navigate-outline"></ion-icon>
+                <span>Open in Google Maps</span>
+              </a>
+            </div>
+
+            <div class="map-iframe-holder">
+              <iframe
+                title="Blacksmith Agadir Restaurant Location"
+                src="https://maps.google.com/maps?q=2+Rue+des+Orangers,+Agadir+80000,+Morocco&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
 
         </div>
@@ -897,15 +1421,15 @@
 
 
       <!-- 
-        - #FEATURES
+        - #FEATURES ("WHY CHOOSE US")
       -->
 
       <section class="section features text-center" aria-label="features">
         <div class="container">
 
-          <p class="section-subtitle label-2">Why Choose Us</p>
+          <p class="section-subtitle label-2">Why Dine With Us</p>
 
-          <h2 class="headline-1 section-title">Our Strength</h2>
+          <h2 class="headline-1 section-title">Our Signatures</h2>
 
           <ul class="grid-list">
 
@@ -913,12 +1437,12 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="Charcoal Wood-Fire Forge">
                 </div>
 
-                <h3 class="title-2 card-title">Hygienic Food</h3>
+                <h3 class="title-2 card-title">Charcoal Smokehouse</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">Natural hardwood coal fires locking in deep smoky richness in every skewer and burger.</p>
 
               </div>
             </li>
@@ -927,12 +1451,12 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="Fresh Moroccan Produce">
                 </div>
 
-                <h3 class="title-2 card-title">Fresh Environment</h3>
+                <h3 class="title-2 card-title">Prime &amp; Halal Cuts</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">Prime halal beef, Atlantic seafood, and farm-fresh Souss vegetables sourced every morning.</p>
 
               </div>
             </li>
@@ -941,12 +1465,12 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="Skilled Master Chefs">
                 </div>
 
-                <h3 class="title-2 card-title">Skilled Chefs</h3>
+                <h3 class="title-2 card-title">Master Pitmasters</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">Passionate grill masters forging each recipe with precision, craft spices, and culinary love.</p>
 
               </div>
             </li>
@@ -955,114 +1479,20 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="Late-Night Lounge and Events">
                 </div>
 
-                <h3 class="title-2 card-title">Event & Party</h3>
+                <h3 class="title-2 card-title">Late-Night Vibe</h3>
 
-                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                <p class="label-1 card-text">Open daily till 1:00 AM with relaxed music, terrace breeze, and welcoming Moroccan hospitality.</p>
 
               </div>
             </li>
 
           </ul>
 
-          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
-            class="shape shape-1">
-
-          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
-            class="shape shape-2">
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #EVENT
-      -->
-
-      <section class="section event bg-black-10" aria-label="event">
-        <div class="container">
-
-          <p class="section-subtitle label-2 text-center">Recent Updates</p>
-
-          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Recipie</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View Our Blog</span>
-
-            <span class="text text-2" aria-hidden="true">View Our Blog</span>
-          </a>
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape" class="shape shape-1">
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape" class="shape shape-2">
 
         </div>
       </section>
@@ -1078,29 +1508,36 @@
     - #FOOTER
   -->
 
-  <footer class="footer section has-bg-image text-center"
-    style="background-image: url('./assets/images/footer-bg.jpg')">
+  <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
     <div class="container">
 
       <div class="footer-top grid-list">
 
         <div class="footer-brand has-before has-after">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          <a href="#top" class="logo" aria-label="Blacksmith Agadir Home">
+            <img src="./assets/images/logo.svg" width="220" height="50" loading="lazy" alt="Blacksmith Agadir Logo">
           </a>
 
           <address class="body-4">
-            Restaurant St, Delicious City, London 9578, UK
+            2 Rue des Orangers, Agadir 80000, Morocco <br>
+            <span style="color: var(--gold-crayola); font-size: 1.3rem;">Plus Code: C9FX+37 Agadir</span>
           </address>
 
-          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
+          <a href="mailto:contact@blacksmithagadir.com" class="body-4 contact-link">contact@blacksmithagadir.com</a>
 
-          <a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +88-123-123456</a>
+          <a href="tel:+212699779600" class="body-4 contact-link">Reservations: 06 99 77 96 00</a>
 
           <p class="body-4">
-            Open : 09:00 am - 01:00 pm
+            Open Daily: 12:00 PM – 01:00 AM (Closes 1 AM)
           </p>
+
+          <div style="margin-block: 15px;">
+            <span class="google-rating-pill">
+              <span class="stars">★★★★★</span>
+              <span>4.7 (3,943 Reviews) · MAD 100–200</span>
+            </span>
+          </div>
 
           <div class="wrapper">
             <div class="separator"></div>
@@ -1108,23 +1545,21 @@
             <div class="separator"></div>
           </div>
 
-          <p class="title-1">Get News & Offers</p>
+          <p class="title-1">Get Blacksmith News &amp; Specials</p>
 
           <p class="label-1">
-            Subscribe us & Get <span class="span">25% Off.</span>
+            Subscribe to our newsletter &amp; receive seasonal grill specials and exclusive offers.
           </p>
 
-          <form action="" class="input-wrapper">
+          <form action="" class="input-wrapper" data-newsletter-form>
             <div class="icon-wrapper">
               <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+              <input type="email" name="email_address" placeholder="Your email address" required autocomplete="email" class="input-field">
             </div>
 
             <button type="submit" class="btn btn-secondary">
               <span class="text text-1">Subscribe</span>
-
-              <span class="text text-2" aria-hidden="true">Subscribe</span>
+              <span class="text text-2" aria-hidden="true">Join VIP</span>
             </button>
           </form>
 
@@ -1133,23 +1568,35 @@
         <ul class="footer-list">
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+            <a href="#services" class="label-2 footer-link hover-underline">Services &amp; Dining Modes</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus &amp; Highlights</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+            <a href="#special-dish" class="label-2 footer-link hover-underline">Special Dish</a>
+          </li>
+
+          <li>
+            <a href="#reviews" class="label-2 footer-link hover-underline">Google Reviews (4.7★)</a>
+          </li>
+
+          <li>
+            <a href="#gallery" class="label-2 footer-link hover-underline">Photos &amp; Vibe</a>
+          </li>
+
+          <li>
+            <a href="#reservation" class="label-2 footer-link hover-underline">Online Reservation</a>
           </li>
 
         </ul>
@@ -1157,23 +1604,33 @@
         <ul class="footer-list">
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">
+              Instagram (@blacksmith)
+            </a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+            <a href="https://maps.google.com/?q=2+Rue+des+Orangers,+Agadir+80000" target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">
+              Google Maps (C9FX+37)
+            </a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+            <a href="tel:+212699779600" class="label-2 footer-link hover-underline">
+              Phone: 06 99 77 96 00
+            </a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+            <a href="https://wa.me/212699779600" target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">
+              WhatsApp Direct
+            </a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+            <a href="#contact" class="label-2 footer-link hover-underline">
+              Directions &amp; Parking
+            </a>
           </li>
 
         </ul>
@@ -1183,14 +1640,97 @@
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-            target="_blank" class="link">codewithsadee</a>
+          &copy; 2026 Blacksmith Agadir. All Rights Reserved | 2 Rue des Orangers, Agadir 80000 · Open Daily 12 PM - 1 AM
         </p>
 
       </div>
 
     </div>
   </footer>
+
+
+
+
+
+  <!-- 
+    - #RESERVATION CONFIRMATION MODAL
+  -->
+
+  <div class="reservation-modal-backdrop" data-reservation-modal>
+    <div class="reservation-modal">
+      <button class="modal-close-btn" aria-label="close modal" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="icon-box">
+        <ion-icon name="checkmark-done-outline"></ion-icon>
+      </div>
+
+      <h3 class="modal-title">C'est Fait ! Table Réservée 🎉</h3>
+      <p class="modal-text">
+        Merci d'avoir choisi Blacksmith Agadir. Votre demande a été transmise automatiquement à notre équipe au <strong>06 99 77 96 00</strong>.
+      </p>
+
+      <div class="booking-summary-box" data-booking-summary>
+        <!-- Populated dynamically via JS -->
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-primary" data-modal-close style="width: 100%; justify-content: center;">
+          <span class="text text-1">Parfait, merci !</span>
+          <span class="text text-2" aria-hidden="true">Fermer</span>
+        </button>
+
+        <a href="tel:+212699779600" class="btn-call">
+          <ion-icon name="call-outline" style="font-size: 1.8rem;"></ion-icon>
+          <span>Appeler le 06 99 77 96 00</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOAST NOTIFICATION
+  -->
+
+  <div class="toast-notice" data-toast>
+    <ion-icon name="checkmark-circle"></ion-icon>
+    <span>Thank you! You are now subscribed to Blacksmith Agadir news &amp; offers.</span>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #MOBILE STICKY ACTION BAR
+  -->
+
+  <div class="mobile-action-bar">
+    <a href="tel:+212699779600">
+      <ion-icon name="call"></ion-icon>
+      <span>Call</span>
+    </a>
+
+    <a href="#reservation" class="highlight">
+      <ion-icon name="calendar"></ion-icon>
+      <span>Book Table</span>
+    </a>
+
+    <a href="https://maps.google.com/?q=2+Rue+des+Orangers,+Agadir+80000" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="navigate"></ion-icon>
+      <span>Map (C9FX+37)</span>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="logo-instagram"></ion-icon>
+      <span>Instagram</span>
+    </a>
+  </div>
 
 
 

@@ -1,0 +1,31 @@
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="circlePath" d="M 70, 70 m -52, 0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0"/>
+    <linearGradient id="badgeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3D6"/>
+      <stop offset="50%" stop-color="#E4C590"/>
+      <stop offset="100%" stop-color="#A47731"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Disc Background with Glow -->
+  <circle cx="70" cy="70" r="66" fill="#121316" stroke="url(#badgeGold)" stroke-width="2"/>
+  <circle cx="70" cy="70" r="62" stroke="#E4C590" stroke-width="0.75" stroke-dasharray="3 2" opacity="0.6"/>
+
+  <!-- Rotating Circular Text -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 70 70" to="360 70 70" dur="20s" repeatCount="indefinite"/>
+    <text font-family="'DM Sans', sans-serif" font-size="9.5" font-weight="700" letter-spacing="3.2" fill="url(#badgeGold)">
+      <textPath href="#circlePath">
+        ★ BLACKSMITH AGADIR ★ 4.7 RATED ★ 3,940+ REVIEWS
+      </textPath>
+    </text>
+  </g>
+
+  <!-- Inner Badge Center -->
+  <circle cx="70" cy="70" r="38" fill="#1A1C20" stroke="url(#badgeGold)" stroke-width="1.5"/>
+  <text x="70" y="64" font-family="'Forum', serif" font-size="20" font-weight="700" fill="#FFF3D6" text-anchor="middle">4.7★</text>
+  <text x="70" y="77" font-family="'DM Sans', sans-serif" font-size="7.5" font-weight="700" letter-spacing="1.5" fill="#E4C590" text-anchor="middle">TOP RATED</text>
+  <text x="70" y="87" font-family="'DM Sans', sans-serif" font-size="7" font-weight="500" letter-spacing="1" fill="#A0A0A0" text-anchor="middle">AGADIR</text>
+</svg>
+
