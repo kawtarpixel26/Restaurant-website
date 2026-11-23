@@ -1,10 +1,10 @@
 <div align="center">
 
-  <h1 align="center">🔥 Blacksmith Agadir - Restaurant, Smokehouse &amp; Lounge</h1>
+  <h1 align="center">🔥 Sakura Sushi - Restaurant, Smokehouse &amp; Lounge</h1>
 
   <p align="center">
-    <strong>A modern, responsive, high-end website for Blacksmith Agadir Restaurant</strong><br>
-    4.7 ⭐ (3,943+ Reviews) · MAD 100–200 · 2 Rue des Orangers, Agadir 80000
+    <strong>A modern, responsive, high-end website for Sushi Restaurant</strong><br>
+    4.7 ⭐ (3,943+ Reviews) · MAD 100–200 · 2 Rue des Orangers, Casablanca 20000
   </p>
 
   <p align="center">
@@ -15,11 +15,11 @@
 
 ---
 
-## 📋 About Blacksmith Agadir
+## 📋 About Sakura Sushi
 
-**Blacksmith Agadir** is a premier charcoal smokehouse, grill, and lounge located in Agadir, Morocco. Known for authentic fire-forged culinary craft, sizzling skewers with hand-cut chips, the signature Flamin' Chicken Burger, traditional Moroccan briouates, and artisanal mocktails.
+**Sakura Sushi** is a premier charcoal smokehouse, grill, and lounge located in Casablanca, Morocco. Known for authentic fire-forged culinary craft, sizzling skewers with hand-cut chips, the signature Flamin' Chicken Burger, traditional Moroccan briouates, and artisanal mocktails.
 
-- **📍 Address:** 2 Rue des Orangers, Agadir 80000, Morocco (Google Maps Plus Code: `C9FX+37 Agadir`)
+- **📍 Address:** 2 Rue des Orangers, Casablanca 20000, Morocco (Google Maps Plus Code: `C9FX+37 Casablanca`)
 - **📞 Phone:** `06 99 77 96 00` / `+212 699 77 96 00`
 - **⭐ Rating:** 4.7 / 5.0 (3,943+ verified Google reviews)
 - **💰 Price Range:** MAD 100–200 per guest
@@ -30,7 +30,7 @@
 
 ## ✨ Features & Enhancements
 
-- **Brand Customization:** 100% customized for Blacksmith Agadir with custom SVG forge logo, favicon, color harmony, and localized typography.
+- **Brand Customization:** 100% customized for Sakura Sushi with custom SVG forge logo, favicon, color harmony, and localized typography.
 - **Hero Slider:** 3 responsive, high-impact slides highlighting charcoal grilling, signature burgers, skewers, and night lounge ambiance.
 - **Interactive Menu Filter:** Smooth category switching across *Grills & Burgers*, *Briouates & Tapas*, *Moroccan & Seafood*, and *Mojitos & Sweets*.
 - **Google Reviews Integration:** Prominent 4.7★ trust badge with verified customer testimonials and pricing indicators.
@@ -56,7 +56,7 @@ http.createServer((req, res) => {
     if (err) { res.writeHead(404); res.end('Not found'); }
     else { res.writeHead(200, { 'Content-Type': m[ext] || 'application/octet-stream' }); res.end(data); }
   });
-}).listen(8080, () => console.log('Blacksmith website running at http://localhost:8080/'));
+}).listen(8080, () => console.log('Sakura Sushi website running at http://localhost:8080/'));
 "
 ```
 

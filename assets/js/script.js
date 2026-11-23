@@ -222,9 +222,10 @@ const reservationModal = document.querySelector("[data-reservation-modal]");
 const modalCloseBtns = document.querySelectorAll("[data-modal-close]");
 
 // Restaurant WhatsApp Number
-const BLACKSMITH_WHATSAPP = "212699779600";
+const SAKURA_WHATSAPP = "212699779600";
 // Optional CallMeBot API key for automatic direct WhatsApp message delivery
-let CALLMEBOT_API_KEY = ""; // Enter your free key from CallMeBot if active
+// Paste the key CallMeBot sends to the restaurant's WhatsApp (see README). Empty = fallback to wa.me.
+const CALLMEBOT_API_KEY = "";
 
 if (reservationForm && reservationModal) {
   reservationForm.addEventListener("submit", function (e) {
@@ -248,24 +249,64 @@ if (reservationForm && reservationModal) {
     const message = formData.get("message") || "Aucune";
 
     // Format clean message for WhatsApp
-    const waText = 
-`🍽️ *NOUVELLE RÉSERVATION - BLACKSMITH AGADIR*
-👤 *Client :* ${name}
-📞 *Téléphone :* ${phone}
-👥 *Couverts :* ${person}
-📅 *Date :* ${date}
-⏰ *Heure :* ${time}
-📍 *Option :* ${serviceType}
-📝 *Demandes :* ${message}
-✨ Envoyé automatiquement depuis le site web.`;
+    // Display helpers: 2 Persons -> 2, 2026-10-27 -> 27/10/2026, 08:00 pm -> 20h00
+    const personCount = String(person).trim().split(/\s+/)[0];
+    const [dy, dm, dd] = String(date).split("-");
+    const dateFr = dd ? `${dd}/${dm}/${dy}` : date;
+    const tm = String(time).match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    let timeFr = time;
+    if (tm) {
+      let h = parseInt(tm[1], 10) % 12;
+      if (tm[3].toLowerCase() === "pm") h += 12;
+      timeFr = `${String(h).padStart(2, "0")}h${tm[2]}`;
+    }
+    const placeMap = {
+      "Dine-in (Indoor Dining Room)": "Salle intérieure",
+      "Dine-in (Sushi Bar)": "Comptoir sushi bar",
+      "Kerbside Pickup": "Retrait devant le restaurant",
+      "No-contact Delivery": "Livraison sans contact"
+    };
+    const placeFr = placeMap[serviceType] || serviceType;
+    const nameFr = String(name).trim();
+    const nameDisplay = nameFr.charAt(0).toUpperCase() + nameFr.slice(1).toLowerCase();
+    const requestFr = (message === "Aucune" || !String(message).trim()) ? "Aucune" : message;
+
+    const waText =
+`*SAKURA SUSHI – NOUVELLE RÉSERVATION*
+
+Une nouvelle réservation a été reçue.
+
+Client : ${nameDisplay}
+Téléphone : ${phone}
+Personnes : ${personCount}
+
+Date : ${dateFr}
+Heure : ${timeFr}
+Emplacement : ${placeFr}
+
+Demandes : ${requestFr}
+------------------
+Réservation reçue via le site web Sakura Sushi.`;
 
     const encodedText = encodeURIComponent(waText);
 
     // 1. Send silently in the background via CallMeBot WhatsApp Gateway
-    const callMeBotUrl = `https://api.callmebot.com/whatsapp.php?phone=+${BLACKSMITH_WHATSAPP}&text=${encodedText}${CALLMEBOT_API_KEY ? `&apikey=${CALLMEBOT_API_KEY}` : ''}`;
+    const callMeBotUrl = `https://api.callmebot.com/whatsapp.php?phone=+${SAKURA_WHATSAPP}&text=${encodedText}${CALLMEBOT_API_KEY ? `&apikey=${CALLMEBOT_API_KEY}` : ''}`;
     try {
       fetch(callMeBotUrl, { mode: 'no-cors' }).catch(() => {});
     } catch (err) {}
+
+    // 1b. Open WhatsApp with the message pre-filled for the restaurant number.
+    // Must run directly in the click handler so the browser doesn't block the popup.
+    const waLink = `https://wa.me/${SAKURA_WHATSAPP}?text=${encodedText}`;
+    const waBtn = document.querySelector("[data-whatsapp-send]");
+    if (waBtn) waBtn.href = waLink;
+    // With a CallMeBot key the message is sent silently (step 1); otherwise fall back to wa.me.
+    if (!CALLMEBOT_API_KEY) {
+      try { window.open(waLink, "_blank", "noopener"); } catch (err) {}
+    } else if (waBtn) {
+      waBtn.style.display = "none";
+    }
 
     // 2. Also send to local backend endpoint if running via node server
     try {
@@ -278,9 +319,9 @@ if (reservationForm && reservationModal) {
 
     // 3. Store in localStorage as backup ledger
     try {
-      const existing = JSON.parse(localStorage.getItem('blacksmith_reservations') || '[]');
+      const existing = JSON.parse(localStorage.getItem('sakura_reservations') || '[]');
       existing.push({ name, phone, person, date, time, serviceType, message, timestamp: new Date().toISOString() });
-      localStorage.setItem('blacksmith_reservations', JSON.stringify(existing));
+      localStorage.setItem('sakura_reservations', JSON.stringify(existing));
     } catch (err) {}
 
     // 4. Update Modal summary on page
@@ -289,7 +330,7 @@ if (reservationForm && reservationModal) {
       summaryEl.innerHTML = `
         <div style="text-align: center; margin-block-end: 14px;">
           <span style="display: inline-block; padding: 4px 14px; background: hsla(145, 63%, 42%, 0.15); border: 1px solid #2ECC71; color: #2ECC71; border-radius: 50px; font-weight: bold; font-size: 1.25rem;">
-            ✓ Envoyé automatiquement à notre numéro
+            ${CALLMEBOT_API_KEY ? "✓ Envoyé à notre équipe sur WhatsApp" : "✓ Message WhatsApp prêt à envoyer"}
           </span>
         </div>
         <p><strong>Client :</strong> ${name}</p>

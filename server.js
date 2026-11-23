@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
       try {
         const data = JSON.parse(body);
         console.log('\n========================================');
-        console.log('🔥 NOUVELLE RÉSERVATION BLACKSMITH AGADIR');
+        console.log('🔥 NOUVELLE RÉSERVATION SAKURA SUSHI');
         console.log('========================================');
         console.log(`👤 Client      : ${data.name}`);
         console.log(`📞 Téléphone   : ${data.phone}`);
@@ -76,7 +76,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`\n======================================================`);
-  console.log(`🚀 Blacksmith Agadir Website running at:`);
+  console.log(`🚀 Sakura Sushi Website running at:`);
   console.log(`   👉 http://localhost:${PORT}/`);
   console.log(`📱 WhatsApp Destination: 06 99 77 96 00 (+212699779600)`);
   console.log(`======================================================\n`);
