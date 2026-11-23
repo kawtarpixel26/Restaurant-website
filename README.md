@@ -1,69 +1,85 @@
-<div align="center">
+# Sakura Sushi — Restaurant Website
 
-  <h1 align="center">🔥 Sakura Sushi - Restaurant, Smokehouse &amp; Lounge</h1>
+A modern, responsive, single-page website for **Sakura Sushi**, a Japanese restaurant in Casablanca, Morocco. Built with plain HTML, CSS and JavaScript — no framework, no build step.
 
-  <p align="center">
-    <strong>A modern, responsive, high-end website for Sushi Restaurant</strong><br>
-    4.7 ⭐ (3,943+ Reviews) · MAD 100–200 · 2 Rue des Orangers, Casablanca 20000
-  </p>
-
-  <p align="center">
-    <a href="./index.html"><strong>➥ Open Website</strong></a>
-  </p>
-
-</div>
+**4.7 ★** (3,943 Google reviews) · MAD 100–200 per guest · Open daily 12:00 – 01:00
 
 ---
 
-## 📋 About Sakura Sushi
+## Restaurant information
 
-**Sakura Sushi** is a premier charcoal smokehouse, grill, and lounge located in Casablanca, Morocco. Known for authentic fire-forged culinary craft, sizzling skewers with hand-cut chips, the signature Flamin' Chicken Burger, traditional Moroccan briouates, and artisanal mocktails.
+| | |
+|---|---|
+| **Address** | 2 Rue des Orangers, Casablanca 20000, Morocco (Plus Code `C9FX+37`) |
+| **Phone / WhatsApp** | 06 99 77 96 00 · +212 699 77 96 00 |
+| **Hours** | Daily, 12:00 PM – 01:00 AM |
+| **Services** | Dine-in · Sushi bar counter · Kerbside pickup · No-contact delivery |
 
-- **📍 Address:** 2 Rue des Orangers, Casablanca 20000, Morocco (Google Maps Plus Code: `C9FX+37 Casablanca`)
-- **📞 Phone:** `06 99 77 96 00` / `+212 699 77 96 00`
-- **⭐ Rating:** 4.7 / 5.0 (3,943+ verified Google reviews)
-- **💰 Price Range:** MAD 100–200 per guest
-- **⏰ Hours:** Open daily from 12:00 PM to 01:00 AM (Closes 1 AM)
-- **🍽️ Services:** Dine-in · Kerbside Pickup · No-Contact Delivery
+> The address, Plus Code, rating and reviews are placeholder content and should be replaced with the restaurant's real details before going live.
 
----
+## Features
 
-## ✨ Features & Enhancements
+- **Hero slider** — three full-screen slides showcasing sushi, maki and sashimi.
+- **Filterable menu** — *Maki & Rolls*, *Starters & Salads*, *Nigiri & Sashimi*, *Drinks & Desserts*, with prices in MAD.
+- **Signature dish** and **chef** sections, photo gallery, features and customer reviews.
+- **Online table reservation** — booking form with validation, a confirmation summary and a pre-filled WhatsApp message to the restaurant.
+- **Google Maps** embed and one-click directions.
+- **Mobile action bar** — call, reserve, directions and Instagram, always within reach on phones.
+- **SEO and accessibility** — semantic HTML5, meta tags, descriptive `alt` text and ARIA attributes.
+- **Fully responsive** — mobile, tablet and desktop layouts.
 
-- **Brand Customization:** 100% customized for Sakura Sushi with custom SVG forge logo, favicon, color harmony, and localized typography.
-- **Hero Slider:** 3 responsive, high-impact slides highlighting charcoal grilling, signature burgers, skewers, and night lounge ambiance.
-- **Interactive Menu Filter:** Smooth category switching across *Grills & Burgers*, *Briouates & Tapas*, *Moroccan & Seafood*, and *Mojitos & Sweets*.
-- **Google Reviews Integration:** Prominent 4.7★ trust badge with verified customer testimonials and pricing indicators.
-- **Interactive Online Reservation:** Full booking form with real-time feedback modal, guest details summary, direct WhatsApp confirmation, and phone booking.
-- **Google Maps Integration:** Dedicated interactive map embed and one-click navigation links to 2 Rue des Orangers (C9FX+37).
-- **Mobile Sticky Action Bar:** Quick-action bar on mobile for instant calls, online reservations, and GPS directions.
-- **Performance & Accessibility:** Fully responsive on all device sizes, semantic HTML5, smooth parallax scrolling, and accessible ARIA attributes.
+## Tech stack
 
----
+- HTML5, CSS3 (custom properties, flexbox, grid), vanilla JavaScript
+- [Ionicons](https://ionic.io/ionicons) for icons, Google Fonts (*Forum*, *DM Sans*)
+- Optional Node.js server (`server.js`) with no dependencies
 
-## 🚀 How to Run Locally
+## Project structure
 
-### Option 1: Using Node.js
-```bash
-node -e "
-const http = require('http'), fs = require('fs'), path = require('path');
-http.createServer((req, res) => {
-  let p = '.' + req.url.split('?')[0];
-  if (p === './') p = './index.html';
-  const ext = path.extname(p);
-  const m = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.png': 'image/png' };
-  fs.readFile(p, (err, data) => {
-    if (err) { res.writeHead(404); res.end('Not found'); }
-    else { res.writeHead(200, { 'Content-Type': m[ext] || 'application/octet-stream' }); res.end(data); }
-  });
-}).listen(8080, () => console.log('Sakura Sushi website running at http://localhost:8080/'));
-"
+```
+.
+├── index.html          # Single-page site
+├── server.js           # Optional local server + reservation endpoint
+├── icon.svg            # Favicon
+├── assets/
+│   ├── css/style.css   # Styles
+│   ├── js/script.js    # Interactions, menu filter, reservation form
+│   └── images/         # Photos, logo and decorative graphics
+└── LICENSE
 ```
 
-### Option 2: Direct Browser
-Simply double-click `index.html` or open it with any web browser.
+## Getting started
 
----
+**Option 1 — open the file.** Double-click `index.html`.
 
-## 📄 License
-MIT License
+**Option 2 — local server (recommended).** Requires [Node.js](https://nodejs.org) 16 or later.
+
+```bash
+node server.js
+```
+
+Then open <http://localhost:8080/>. Use `PORT=3000 node server.js` to choose another port.
+
+## Reservations and WhatsApp
+
+When a guest submits the booking form, the site:
+
+1. shows a confirmation summary;
+2. opens WhatsApp with a ready-to-send message addressed to the restaurant — the guest taps **Send** to confirm;
+3. when served by `server.js`, also saves the booking to a local `reservations.json` file (excluded from Git because it contains personal data).
+
+**Fully automatic delivery (optional).** Set `CALLMEBOT_API_KEY` in `assets/js/script.js` with the restaurant owner's [CallMeBot](https://www.callmebot.com/blog/free-api-whatsapp-messages/) key and the message is sent to the owner's WhatsApp without any action from the guest. Note that the key is visible in the page source; for a production setup, send the message from a backend using the WhatsApp Business API or Twilio instead.
+
+## Customisation
+
+- **Colours** — edit the custom properties at the top of `assets/css/style.css` (`:root`).
+- **Menu items** — edit the `menu-card` entries in `index.html`; the `data-filter` attribute drives the category filter.
+- **Contact details** — update the phone number, address and map in `index.html` and the WhatsApp number in `assets/js/script.js` (`SAKURA_WHATSAPP`).
+
+## Deployment
+
+The site is static and can be hosted on GitHub Pages, Netlify or any web server. On static hosting `server.js` is not available, so reservations are delivered through WhatsApp only.
+
+## License
+
+Released under the [MIT License](LICENSE).
